@@ -1,0 +1,18 @@
+{% extends "base_form.html" %}
+{%block content %}
+        <form action='/outcome' method="post">
+            <p>Step 1. Type in your Title:</p>
+            <input type="text" placeholder="  Enter Title " name="head_title"></input>
+            <p>Step 2. Type in a one-line description:</p>
+            <input type="text" placeholder="  Enter Short Description " name="sub_title"></input>
+            <p>Step 3. Paste in here a discriptive paragraph:</p>
+            <input type="text" placeholder="  Enter Full Description " name="about"></input>
+<!--            <p>Step 4. Choose a Color Pallete for your page:</p>-->
+<!--            <button type="button" id="bright">Bright</button>-->
+<!--            <button type="button" id="dark">Dark</button>-->
+            <p>Step 5. Smash Submit to create your page:</p>
+            <button id="submit" type="submit" >Submit</button>
+        </form>
+
+{% endblock %}
+
